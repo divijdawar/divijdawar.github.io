@@ -1,0 +1,9 @@
+title: Divij Dawar
+name: "Divij Dawar's Blog"
+author: Divij Dawar
+twitter_username: divij_dawar
+description: Document my learning notes.
+profile_url: "http://divijdawar.github.io"
+
+# Build settings
+markdown: kramdown
