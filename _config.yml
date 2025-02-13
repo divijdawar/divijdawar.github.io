@@ -1,0 +1,31 @@
+title: "Divij Dawar"
+name: "Divij Dawar's Blog"
+author: "Divij Dawar"
+twitter_username: "divij_dawar"
+description: "Documenting my learning notes."
+profile_url: "https://divijdawar.github.io"
+
+
+markdown: kramdown
+theme: minima  
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+baseurl: "" 
+url: "https://divijdawar.github.io"
+
+permalink: /:title/
+
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

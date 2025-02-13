@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divij Dawar</title>
+    <style>
+        :root {
+            --background: rgb(49, 51, 56);
+            --text-primary: rgb(255, 255, 255);
+            --text-secondary: rgb(200, 200, 200);
+            --header-height:60px;
+            --card-bg: rgb(64, 66, 71);
+            --gap: 24px;
+            --nav-width: 1024px;
+            --main-width: 720px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            margin: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--nav-width);
+            margin: 0 auto;
+            padding: 20px var(--gap);
+        }
+
+        .logo {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: var(--text-primary);
+        }
+        .center-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-secondary);
+            text-align: center;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://divijdawar.github.io/" class="logo">Divij Dawar ☀️</a>
+        <nav class="nav">
+            <a href="https://divijdawar.github.io">Posts</a>
+            <a href="https://divijdawar.github.io/projects.html">Projects</a>
+            <a href="https://divijdawar.github.io/faq.html">FAQ</a>
+        </nav>
+        <div class="center-message">
+            Something cool cooking, hang in there
+        </div>
+    </header>
+</body>
+</html>
