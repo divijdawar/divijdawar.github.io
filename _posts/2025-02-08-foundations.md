@@ -1,8 +1,12 @@
 ---
 title: Foundations of Language Models
 ---
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="styles2.css">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations of Language Models</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <header class="nav">
