@@ -5,16 +5,16 @@ title: Foundations of Language Models
   <link rel="stylesheet" href="styles2.css">  
 </head>
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div class="logo">
-    <a href="https://divijdawar.github.io/">Divij Dawar ☀️</a>
-  </div>
-  <nav id="menu">
-    <a href="https://divijdawar.github.io/">Posts</a>
-    <a href="https://divijdawar.github.io/projects.html">Projects</a>
-    <a href="https://divijdawar.github.io/faq.html">FAQ</a>
-  </nav>
-</div>
+<header class="nav">
+    <div class="logo">
+        <a href="https://divijdawar.github.io/">Divij Dawar ☀️</a>
+    </div>
+    <nav id="menu">
+        <a href="https://divijdawar.github.io/">Posts</a>
+        <a href="https://divijdawar.github.io/projects.html">Projects</a>
+        <a href="https://divijdawar.github.io/faq.html">FAQ</a>
+    </nav>
+</header>
 
 Data: February 9th, 2025 | Reading time: 7 minutes | Author: Divij Dawar
 
