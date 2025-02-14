@@ -1,14 +1,3 @@
----
-layout: post
-title: "Foundations of Language Models"
-date: 2025-02-08
-author: "Divij Dawar"
-description: "Exploring the foundations of language models."
-categories: [AI, NLP, Machine Learning]
-tags: [LLMs, NLP, AI]
-permalink: /foundations/
----
-
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
@@ -17,6 +6,27 @@ permalink: /foundations/
     <title>Divij Dawar | Foundations of Language Models</title>
     <link rel="stylesheet" href="styles2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --background: rgb(49, 51, 56);
+            --text-primary: rgb(255, 255, 255);
+            --text-secondary: rgb(200, 200, 200);
+            --header-height:60px;
+            --card-bg: rgb(64, 66, 71);
+            --gap: 24px;
+            --nav-width: 1024px;
+            --main-width: 720px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            margin: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 
 <body class="dark">
