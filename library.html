@@ -90,6 +90,70 @@
             }
         }
 
+        .genre-section {
+            margin-bottom: 48px;
+        }
+
+        .genre-header {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 8px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .book-item {
+            background: var(--card-bg);
+            padding: 16px 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--text-secondary);
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .book-item:hover {
+            border-left-color: var(--text-primary);
+            transform: translateX(4px);
+        }
+
+        .book-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .book-author {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+
+            .genre-header {
+                font-size: 20px;
+            }
+
+            .book-item {
+                padding: 12px 16px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -106,6 +170,36 @@
         <h1>Library</h1>
         <div class="intro-text">
             This is a list of books i've read since i've started documenting my reading. These are not all the books, nor the books i like or endorse. Many are also just resources. This page is mostly for me to organize and sort through my reading.
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-header">Literature</h2>
+            <div class="book-list">
+            </div>
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-header">History</h2>
+            <div class="book-list">
+            </div>
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-header">Science</h2>
+            <div class="book-list">
+            </div>
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-header">Philosophy</h2>
+            <div class="book-list">
+            </div>
+        </div>
+
+        <div class="genre-section">
+            <h2 class="genre-header">Biography</h2>
+            <div class="book-list">
+            </div>
         </div>
     </div>
 </body>
