@@ -90,28 +90,25 @@ h1 {
 }
 
 .book-item {
-    background: var(--card-bg);
-    padding: 16px 20px;
-    border-radius: 8px;
-    border-left: 4px solid var(--text-secondary);
-    transition: border-color 0.2s, transform 0.2s;
-}
-
-.book-item:hover {
-    border-left-color: var(--text-primary);
-    transform: translateX(4px);
+    padding: 8px 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.4;
 }
 
 .book-title {
+    display: inline;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-primary);
-    margin-bottom: 4px;
 }
 
 .book-author {
-    font-size: 14px;
-    color: var(--text-secondary);
+    display: inline;
+    font-size: 16px;
+    color: var(--text-primary);
+    font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
