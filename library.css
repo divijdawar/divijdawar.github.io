@@ -86,11 +86,11 @@ h1 {
 .book-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
 }
 
 .book-item {
-    padding: 8px 0;
+    padding: 1px 0;
     text-align: center;
     font-size: 16px;
     color: var(--text-primary);
