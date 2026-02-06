@@ -1,0 +1,37 @@
+---
+title: "Posts - Divij Dawar"
+bodyClass: "dark list"
+---
+<div class="main">
+    <header class="nav">
+        <div class="logo">
+            <a href="/">Divij Dawar ☀️</a>
+        </div>
+        <nav id="menu">
+            <a href="/">About</a>
+            <a href="/posts.html">Posts</a>
+            <a href="/resources.html">Resources</a>
+            <a href="/library.html">Library</a>
+            <a href="/faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    $for(posts)$
+    <article class="post-entry">
+        <a class="entry-link" aria-label="post link to $title$" href="$url$"></a>
+        <header class="entry-header">
+            <h2>$title$</h2>
+        </header>
+        <div class="entry-content">
+            <p>$description$</p>
+        </div>
+        <footer class="entry-footer">
+            <span>$date$</span>
+            <span>&middot;</span>
+            <span>$readtime$</span>
+            <span>&middot;</span>
+            <span>Divij Dawar</span>
+        </footer>
+    </article>
+    $endfor$
+</div>

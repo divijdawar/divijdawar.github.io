@@ -30,9 +30,19 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
+            let ctx = constField "title" "Divij Dawar"
+                    <> constField "bodyClass" "dark"
+                    <> defaultContext
+            getResourceBody
+                >>= applyAsTemplate ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+
+    match "posts.html" $ do
+        route idRoute
+        compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let ctx = listField "posts" postCtx (return posts)
-                    <> constField "title" "Divij Dawar"
+                    <> constField "title" "Posts - Divij Dawar"
                     <> constField "bodyClass" "dark list"
                     <> defaultContext
             getResourceBody
