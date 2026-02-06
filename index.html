@@ -1,97 +1,57 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divij Dawar</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
-<body class="list">
-    <div class="main">
-        <header class="nav">
-            <div class="logo">
-                <a href="https://divijdawar.github.io/">Divij Dawar ☀️</a>
-            </div>
-            <nav id="menu">
-                <a href="https://divijdawar.github.io/">Posts</a>
-                <a href="https://divijdawar.github.io/projects.html">Projects</a>
-                <a href="https://divijdawar.github.io/library.html">Library</a>
-                <a href="https://divijdawar.github.io/faq.html">FAQ</a>
-            </nav>
-        </header>
-
-        <section class="first-entry">
-            <div class="entry-header">
-                <h1>Welcome</h1>
-            </div>
-            <div class="entry-content">
-                <p>I'm a 21 year old engineer/programmer. My interests lie in mathematics, programming, philosophy, and cryptocurrency.</p>
-            </div>
-        </section>
-
-        <div class="social-icons">
-            <a href="https://x.com/divij_dawar" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-            <a href="mailto:2divijdawar@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/divijdawar" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
+---
+title: "Divij Dawar"
+bodyClass: "dark list"
+---
+<div class="main">
+    <header class="nav">
+        <div class="logo">
+            <a href="/">Divij Dawar ☀️</a>
         </div>
+        <nav id="menu">
+            <a href="/">Posts</a>
+            <a href="/resources.html">Resources</a>
+            <a href="/library.html">Library</a>
+            <a href="/faq.html">FAQ</a>
+        </nav>
+    </header>
 
-        <article class="post-entry">
-            <a class="entry-link" aria-label="post link to blog on failure" href="https://divijdawar.github.io/failure.html"></a>
-            <header class="entry-header">
-                <h2>On Failure</h2>
-            </header>
-            <div class="entry-content">
-                <p> "One must imagine Sisyphus happy" - Albert Camus. I do not think our society truly allows failure as an option. We stage interventions when markets, individuals, and businesses fail (leaving aside the failure of states).  </p>
-            </div>
-            <footer class="entry-footer">
-                <span>July 21th, 2025</span>
-                <span>·</span>
-                <span>2 min read</span>
-                <span>·</span>
-                <span>Divij Dawar</span>
-            </footer>
-        </article>
+    <section class="first-entry">
+        <div class="entry-header">
+            <h1>Welcome</h1>
+        </div>
+        <div class="entry-content">
+            <p>I'm a 21 year old engineer/programmer. My interests lie in mathematics, programming, philosophy, and cryptocurrency.</p>
+        </div>
+    </section>
 
-        <article class="post-entry">
-            <a class="entry-link" aria-label="post link to mechanistic interpretability" href="https://divijdawar.github.io/mech_interp.html"></a>
-            <header class="entry-header">
-                <h2>Mechanistic Interpretability- an Overview</h2>
-            </header>
-            <div class="entry-content">
-                <p>In this blog I will try to expand on the field of mechanistic interpretability and why it is important for AI safety and AI alignment. I will also talk about a few of the key concepts of the field and provide links to resources that I myself have referred to.</p>
-            </div>
-            <footer class="entry-footer">
-                <span>March 20th, 2025</span>
-                <span>·</span>
-                <span>9 min read</span>
-                <span>·</span>
-                <span>Divij Dawar</span>
-            </footer>
-        </article>
-
-        <article class="post-entry">
-            <a class="entry-link" aria-label="post link to Foundations of Language Models" href="https://divijdawar.github.io/foundations.html"></a>
-            <header class="entry-header">
-                <h2>Foundations of Language Models</h2>
-            </header>
-            <div class="entry-content">
-                <p>Large language models have historically been considered a subset of natural language processing. However, in the past half-decade, we have witnessed unprecedented advances in these models. This progress raises the question of whether categorizing LLMs solely within the scope of NLP might be unnecessarily restrictive. The following blog post presents my learnings, insights, and thoughts from reading multiple papers, blog posts and various other pieces of text into building and theoretical understanding of language models.</p>
-            </div>
-            <footer class="entry-footer">
-                <span>February 8, 2025</span>
-                <span>·</span>
-                <span>7 min read</span>
-                <span>·</span>
-                <span>Divij Dawar</span>
-            </footer>
-        </article>
+    <div class="social-icons">
+        <a href="https://x.com/divij_dawar" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="mailto:2divijdawar@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/divijdawar" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
-</body>
-</html>
+
+    $for(posts)$
+    <article class="post-entry">
+        <a class="entry-link" aria-label="post link to $title$" href="$url$"></a>
+        <header class="entry-header">
+            <h2>$title$</h2>
+        </header>
+        <div class="entry-content">
+            <p>$description$</p>
+        </div>
+        <footer class="entry-footer">
+            <span>$date$</span>
+            <span>&middot;</span>
+            <span>$readtime$</span>
+            <span>&middot;</span>
+            <span>Divij Dawar</span>
+        </footer>
+    </article>
+    $endfor$
+</div>
